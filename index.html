@@ -217,19 +217,17 @@
     </div>
 
     <div class="counter-box" id="display-counter">Pytanie 1 z 1</div>
-    
+     
     <div class="go-to-box">
         Idź do pytania: <input type="number" id="input-index" onchange="goToItem(this.value)">
     </div>
 </div>
 
 <script>
+// TUTAJ SĄ PYTANIA I ODPOWIEDZI. Zmieniaj wartość w "i", aby zmienić poprawną odpowiedź.
 const menu = [
-    
-    
-    
-    {n: "kogo kocham", i: "mnie.", "MNIE", a: "M N I E"},
-    {n: "co lubie", i: "mnie", a: "jesc"}
+    {n: "kogo kocham", i: "mnie", a: "M N I E"},
+    {n: "co lubie", i: "MNIEEEE", a: "mnie"}
 ];
 
 let currentIndex = 0;
