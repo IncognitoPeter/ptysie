@@ -204,7 +204,7 @@
         <button class="mode-btn" id="btn-quiz" onclick="changeMode('quiz')">Tryb quizu</button>
     </div>
 
-    <div class="title-banner">Menu - Fiszki</div>
+    <div class="title-banner">takie sobie wymyslilem</div>
 
     <div class="quiz-container">
         <div class="question-text" id="display-question">Ładowanie...</div>
@@ -228,8 +228,8 @@ const menu = [
     
     
     
-    {n: "kogo kocham", i: "mnie.", a: "MNIE"},
-    {n: "co lubie", i: "jesc.", a: "no"}
+    {n: "kogo kocham", i: "mnie.", a: "MNIE", a: "M N I E},
+    {n: "co lubie", i: "jesc.", a: "mnie"}
 ];
 
 let currentIndex = 0;
@@ -252,7 +252,7 @@ function updateUI() {
         
         const btn = document.createElement('button');
         btn.className = 'option-item';
-        btn.innerText = "Kliknij, aby zobaczyć skład i alergeny";
+        btn.innerText = "Kliknij, aby zobaczyć ";
         btn.onclick = () => {
             btn.style.display = 'none';
             
@@ -264,7 +264,7 @@ function updateUI() {
         };
         optionsEl.appendChild(btn);
     } else {
-        questionEl.innerText = `Jakie składniki i dodatki zawiera potrawa: "${current.n}"?`;
+        questionEl.innerText = `miau: "${current.n}"?`;
         
         let answers = [current.i];
         while (answers.length < Math.min(4, menu.length)) {
